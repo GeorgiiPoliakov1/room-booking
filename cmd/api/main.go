@@ -12,8 +12,8 @@ import (
 
 	"room-booking/internal/config"
 	"room-booking/internal/db"
+	"room-booking/internal/db/repository/postgres"
 	"room-booking/internal/infrastructure/custom_validator"
-	"room-booking/internal/infrastructure/repository/postgres"
 	"room-booking/internal/interface/http/router"
 	"room-booking/internal/server"
 	"room-booking/internal/service"

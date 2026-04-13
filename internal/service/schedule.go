@@ -7,8 +7,8 @@ import (
 
 	"github.com/google/uuid"
 
+	"room-booking/internal/db/repository"
 	"room-booking/internal/domain"
-	"room-booking/internal/infrastructure/repository"
 )
 
 type CreateScheduleInput struct {

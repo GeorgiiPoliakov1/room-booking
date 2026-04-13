@@ -10,8 +10,8 @@ import (
 	"github.com/jackc/pgx/v5/pgconn"
 	"github.com/jackc/pgx/v5/pgxpool"
 
+	"room-booking/internal/db/repository"
 	"room-booking/internal/domain"
-	"room-booking/internal/infrastructure/repository"
 )
 
 type schedulePGRepo struct {

@@ -17,7 +17,6 @@ type RoomRepository struct {
 	pool *pgxpool.Pool
 }
 
-// NewRoomRepository создаёт экземпляр репозитория для работы с таблицей rooms.
 func NewRoomRepository(pool *pgxpool.Pool) *RoomRepository {
 	return &RoomRepository{pool: pool}
 }
@@ -120,7 +119,6 @@ func (r *RoomRepository) List(ctx context.Context, limit, offset int) ([]*domain
 		return nil, fmt.Errorf("repo: collect rooms: %w", err)
 	}
 
-	// Конвертируем []domain.Room в []*domain.Room
 	result := make([]*domain.Room, len(rooms))
 	for i := range rooms {
 		result[i] = &rooms[i]

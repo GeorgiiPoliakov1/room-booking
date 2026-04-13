@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
+	"room-booking/internal/db/repository"
 	"room-booking/internal/domain"
-	"room-booking/internal/infrastructure/repository"
 
 	"github.com/google/uuid"
 )
